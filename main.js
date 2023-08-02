@@ -44,9 +44,10 @@
 // letUserLogin('Adam')
 
 // ....... authenticate function
-const giveAccessTo = (name) => { // wre now tell functioni what data to use
-    'Access Granted to ' + name;
-    }
+const giveAccessTo = (name) =>  // wre now tell functioni what data to use
+    'Access Granted to ' + name
+    
+
 function authenticate(verify) {
     let array = [];
     for (let i = 0; i < verify; i++) {
@@ -57,11 +58,11 @@ function authenticate(verify) {
 
 function letPerson(person, fn) {
     if(person.level === 'admin') {
-        fn(50000000)
+        fn(500000)
     } else if (person.level === 'user') {
-        fn(10000000)
+        fn(100000)
     }
-    return giveAccessTo(person.name)
+    return giveAccessTo(user)
 }
 
-letPerson({level: 'user', name: 'Tim'}, authenticate)
+letPerson({level: 'user', name: 'Tim'}, authenticate);
