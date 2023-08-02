@@ -30,15 +30,34 @@
 // letUserLogin('Adam')
 
 // .......... refactoring
-const giveAccessTo = (name) => { // wre now tell functioni what data to use
-'Access Granted to ' + name;
-}
-function letUserLogin(user) {
+// const giveAccessTo = (name) => { // wre now tell functioni what data to use
+// 'Access Granted to ' + name;
+// }
+// function letUserLogin(user) {
+//     let array = [];
+//     for (let i = 0; i < 10000000; i++) {
+//         array.push(i)
+//     }
+//     return giveAccessTo(user);
+// }
+
+// letUserLogin('Adam')
+
+// ....... authenticate function
+
+function authenticate(verify) {
     let array = [];
-    for (let i = 0; i < 10000000; i++) {
+    for (let i = 0; i < verify; i++) {
         array.push(i)
     }
-    return giveAccessTo(user);
+    return true;
 }
 
-letUserLogin('Adam')
+function letPerson(person, fn) {
+    if(person.level === 'admin') {
+        fn(50000000)
+    } else if (person.level === 'user') {
+        fn(10000000)
+    }
+    return giveAccessTo(person.name)
+}
