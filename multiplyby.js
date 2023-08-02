@@ -7,3 +7,7 @@ const multiplyBy = function(num1) {
 }
 
 const multiplyByTwo = multiplyBy(2);
+
+multiplyByTwo(2);
+multiplyByTwo(4);
+multiplyByTwo(10);
