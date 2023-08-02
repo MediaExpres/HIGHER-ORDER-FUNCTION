@@ -53,16 +53,20 @@ function authenticate(verify) {
     for (let i = 0; i < verify; i++) {
         array.push(i)
     }
-    return true;
+    return giveAccessTo(person.name)
+}
+
+function sing(person) {
+    return 'la la la bla bla bla my name is ' + person.name; 
 }
 
 function letPerson(person, fn) {
     if(person.level === 'admin') {
-        fn(500000)
+        return fn(person)
     } else if (person.level === 'user') {
-        fn(100000)
+        return fn(person) // replacing 100000 with person broke the giveAccessTo because verify throws undefined
     }
-    return giveAccessTo(person.name)
+    
 }
 
-letPerson({level: 'admin', name: 'Geta'}, authenticate);
+letPerson({level: 'admin', name: 'Geta'}, sing);
