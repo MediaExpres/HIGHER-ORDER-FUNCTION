@@ -44,7 +44,9 @@
 // letUserLogin('Adam')
 
 // ....... authenticate function
-
+const giveAccessTo = (name) => { // wre now tell functioni what data to use
+    'Access Granted to ' + name;
+    }
 function authenticate(verify) {
     let array = [];
     for (let i = 0; i < verify; i++) {
