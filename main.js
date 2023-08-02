@@ -65,5 +65,4 @@ function letPerson(person, fn) {
     return giveAccessTo(person.name)
 }
 
-letPerson({level: 'user', name: 'Tim'}, authenticate);
 letPerson({level: 'admin', name: 'Geta'}, authenticate);
