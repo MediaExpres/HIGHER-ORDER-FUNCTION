@@ -66,3 +66,4 @@ function letPerson(person, fn) {
 }
 
 letPerson({level: 'user', name: 'Tim'}, authenticate);
+letPerson({level: 'admin', name: 'Geta'}, authenticate);
