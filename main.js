@@ -62,7 +62,7 @@ function letPerson(person, fn) {
     } else if (person.level === 'user') {
         fn(100000)
     }
-    return giveAccessTo(user)
+    return giveAccessTo(person.name)
 }
 
 letPerson({level: 'user', name: 'Tim'}, authenticate);
