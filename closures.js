@@ -15,3 +15,13 @@ a()() // returns function: c
 a()()() // returns `grandpa > father > son`
 
 // closures are also called lexical scoping = where is written, scoping = what variables we have access to  
+
+// SECOND EXAMPLE
+
+function boo(string) {
+    return function(name) {
+        return function(name2) {
+            console.log(`${string} ${name} ${name2}`)
+        }
+    }
+}
