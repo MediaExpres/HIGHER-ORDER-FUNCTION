@@ -18,17 +18,21 @@ a()()() // returns `grandpa > father > son`
 
 // SECOND EXAMPLE
 
-function boo(string) {
-    return function(name) {
-        return function(name2) {
-            console.log(`${string} ${name} ${name2}`)
-        }
-    }
-}
+// function boo(string) {
+//     return function(name) {
+//         return function(name2) {
+//             console.log(`${string} ${name} ${name2}`)
+//         }
+//     }
+// }
 
 // simple written
 
 const boo = (string) => (name) => (name2) => 
     console.log(`${string} ${name} ${name2}`)
 
-    boo('HI')('Tim')('Becks')
+    // boo('HI')('Tim')('Becks')  // returns HI Tim Becks
+
+        const booString = boo('hi')
+        // wait 5 years
+        const booStringName = booString() // will wait 5 years to do it
