@@ -13,3 +13,5 @@ return function c() {
 a() // returns function: b
 a()() // returns function: c
 a()()() // returns `grandpa > father > son`
+
+// closures are also called lexical scoping = where is written, scoping = what variables we have access to  
