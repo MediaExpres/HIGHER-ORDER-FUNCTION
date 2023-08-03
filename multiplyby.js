@@ -16,5 +16,6 @@
 
 const multiplyBy = (num1) => (num2) => num1*num2
 
-const multiplyByTwo = multiplyBy(2);
-multiplyByTwo(6);
+// const multiplyByTwo = multiplyBy(2);
+// multiplyByTwo(6);
+multiplyBy(4)(6) // = 24
