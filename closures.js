@@ -28,5 +28,7 @@ function boo(string) {
 
 // simple written
 
-function boo(string) => (name) => (name2) 
+const boo(string) => (name) => (name2) 
     console.log(`${string} ${name} ${name2}`)
+
+    boo('HI')('Tim')('Becks')
