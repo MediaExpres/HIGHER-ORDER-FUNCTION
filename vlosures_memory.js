@@ -21,4 +21,12 @@ function heavyDuty2() {
     }
 } 
 
+// this returns:
+// created
+// created
+// created
+// created Again
+// ':)'
+
+
 // allows ENCAPSULATION
