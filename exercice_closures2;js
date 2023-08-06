@@ -1,10 +1,35 @@
-let view;
-function initialize() {
-    view = 'U+26F0';
-    console.log('view have been set!');
-}
+// let view;
+// function initialize() {
+//     view = 'U+26F0';
+//     console.log('view have been set!');
+// }
 
-initialize();
-initialize();
-initialize();
-console.log(view)
+// initialize();
+// initialize();
+// initialize();
+// console.log(view)
+
+// use closures to run only once - solution provided by Aria within Opera browser:
+
+
+// let view;
+
+// const initialize = (function() {
+//     let hasInitialized = false;
+
+//     return function() {
+//         if (!hasInitialized) {
+//             view = '⛰';
+//             console.log('view has been set!');
+//             hasInitialized = true;
+//         }
+//     };
+// })();
+
+// initialize();
+// initialize();
+// initialize();
+// console.log(view);
+
+// the code throw the following error: SyntaxError: Identifier 'initialize' has already been declared
+
