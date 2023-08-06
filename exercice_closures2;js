@@ -1,0 +1,10 @@
+let view;
+function initialize() {
+    view = 'U+26F0';
+    console.log('view have been set!');
+}
+
+initialize();
+initialize();
+initialize();
+console.log(view)
