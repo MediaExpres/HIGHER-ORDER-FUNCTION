@@ -16,6 +16,6 @@
 const array = [1, 2, 3, 4];
 for(let i=0; i<array.lenght; i++) {
     setTimeout(function() {
-        console.log('I\'m at the index ' + i)
+        console.log('I\'m at the index ' + i) // to log the values write array[i] instead of i
     }, 3000)
 } 
