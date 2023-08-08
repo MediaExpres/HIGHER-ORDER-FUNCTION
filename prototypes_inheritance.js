@@ -50,10 +50,10 @@ Symbol(Symbol.unscopables):{at: true, copyWithin: true, entries: true, fill: tru
 [[Prototype]]:Object
 
 // if u go back from the array to the object:
-const array = []
+const array2 = []
 array.__proto__.__proto__
 
-// you get:
+// you get some properties and methods:
 {constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
 constructor: ƒ Object()
 hasOwnProperty: ƒ hasOwnProperty()
@@ -69,3 +69,8 @@ __lookupSetter__: ƒ __lookupSetter__()
 __proto__: (...)
 get __proto__: ƒ __proto__()
 set __proto__: ƒ __proto__()
+
+// array2 has object properties from inheritance trough the prototype chain: 
+aray2.toString()
+// gives in the console:
+""
