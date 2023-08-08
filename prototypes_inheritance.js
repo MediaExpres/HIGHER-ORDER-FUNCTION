@@ -74,3 +74,18 @@ set __proto__: ƒ __proto__()
 aray2.toString()
 // gives in the console:
 ""
+
+// // // another example of a function who is an empty object
+
+function a() {}
+a.__proto__ // gives in the console:
+f () { [native code] } // while going up again
+a.__proto__.__proto__ // gives again the object
+
+
+// // // the last example
+const obj1 = {} //enter
+obj1.__proto__ // gives this time the object base
+
+// this feature of javascript prototype inheritance is unique against classical inheritance in C# etc.
+// javascript has class but this is "sintactic sugar", there are no classes in javascript
