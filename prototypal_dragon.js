@@ -4,7 +4,7 @@ let dragon = {
     fight() {
         return 5 // damage
     },
-    String() {
+    sing() {
         return `I am ${this.name}, the breather of flames not quite environmental friendly`
     }
 }
