@@ -5,7 +5,9 @@ let dragon = {
         return 5 // damage
     },
     sing() {
+        if (this.fire) { // noe chichi doesn't work anymore
         return `I am ${this.name}, the breather of flames not quite environmental friendly`
+        }
     }
 }
 // dragon.sing()
