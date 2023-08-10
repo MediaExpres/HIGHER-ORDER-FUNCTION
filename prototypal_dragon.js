@@ -27,4 +27,6 @@ let lizard = {
 
 lizard.__proto__ = dragon;
 
-lizard.sing()
+// lizard.sing()
+
+dragon.isPrototypeOf(lizard) // if change dragon with lizard we get false
