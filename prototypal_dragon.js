@@ -20,5 +20,11 @@ let lizard = {
     }
 }
 
-const singLizard = dragon.sing.bind(lizard)
-console.log(singLizard())
+// const singLizard = dragon.sing.bind(lizard)
+// console.log(singLizard())
+
+// // prototypal inheritance:
+
+lizard.__proto__ = dragon;
+
+lizard.sing()
