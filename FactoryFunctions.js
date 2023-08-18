@@ -30,5 +30,8 @@ function createElf(name, weapon) {
     }
 }
 
-const Peter = createElf('Peter', 'stones');
-Peter.attack()
+// const Peter = createElf('Peter', 'stones');
+// Peter.attack()
+
+const Sam = createElf('Samuel', 'fire')
+Sam.attack()
