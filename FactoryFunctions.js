@@ -17,3 +17,18 @@ const elf2 = {
 // elf.name
 // elf.attack()
 elf2.attack()
+
+// factory functions
+
+function createElf(name, weapon) {
+    return {
+        name: name,
+        weapon: weapon,
+        attack() {
+            return 'attack with ' + weapon
+        }
+    }
+}
+
+const Peter = createElf('Peter', 'stones');
+Peter.attack()
