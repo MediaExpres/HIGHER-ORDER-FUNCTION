@@ -22,8 +22,8 @@ elf2.attack()
 
 function createElf(name, weapon) {
     return {
-        name: name,
-        weapon: weapon,
+        name, //: name, symplified with ES6
+        weapon, //: weapon,
         attack() {
             return 'attack with ' + weapon
         }
