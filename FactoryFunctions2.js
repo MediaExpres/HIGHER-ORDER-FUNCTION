@@ -34,8 +34,8 @@ const elf = {
     
     const Peter = createElf('Peter', 'stones');
     // Peter.attack = elfFunctions.attack
-    Peter.attack()
+    console.log(Peter.attack())
     
     const Sam = createElf('Samuel', 'fire')
     // Sam.attack = elfFunctions.attack // this one is added after introduction of elfFunctions
-    Sam.attack()
+    console.log(Sam.attack())
