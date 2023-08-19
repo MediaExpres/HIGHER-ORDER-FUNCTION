@@ -10,10 +10,10 @@ Elf.prototype.attack = function() {
 }
 
 const peter = new Elf('Peter', 'stones') //SyntaxError: Identifier 'elf' has already been declared
-  
+  console.log(peter.attack())
 const sam = new Elf('Samuel', 'fire')
 //sam.name
-sam.attack
+  console.log(sam.attack())
     // WHY? SyntaxError: Identifier 'elf' has already been declared at <anonymous>:1:1
     // BUT IN FIREFOX WORKS, now Chrome is more strict with old methods?
     // BUT then in Firefox throws SyntaxError: redeclaration of const peter ?!? why?
