@@ -5,8 +5,8 @@
         this.weapon = weapon;  
 }
     
-    const Peter = new elf('Peter', 'stones'); //SyntaxError: Identifier 'elf' has already been declared
+    const peter = new elf('Peter', 'stones') //SyntaxError: Identifier 'elf' has already been declared
   
-    const Sam = new elf('Samuel', 'fire');
- 
-    
+    const sam = new elf('Samuel', 'fire')
+ sam.name
+    // WHY? SyntaxError: Identifier 'elf' has already been declared at <anonymous>:1:1
