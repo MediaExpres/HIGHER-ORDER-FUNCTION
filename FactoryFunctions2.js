@@ -18,23 +18,24 @@ const elf = {
     // elf.attack()
     elf2.attack()
     
-    // factory functions
+    // object.create() 
     const elfFunctions = {
         attack() {
             return 'attack with ' + this.weapon // this. added after error: weapon is not defined
         }
     }
     function createElf(name, weapon) {
-        return {
-            name, //: name, symplified with ES6
-            weapon, //: weapon,
+        let newElf = Object.create(elfFunctions)
+       newElf.name = name; //: name, symplified with ES6
+       newElf.weapon = weapon;
+       return newElf; //: weapon,
           // removed the function attack from there and created elfFunctions above
-        }
     }
     
-    // const Peter = createElf('Peter', 'stones');
-    // Peter.attack()
+    const Peter = createElf('Peter', 'stones');
+    // Peter.attack = elfFunctions.attack
+    Peter.attack()
     
     const Sam = createElf('Samuel', 'fire')
-    Sam.attack = elfFunctions.attack // this one is added after introduction of elfFunctions
+    // Sam.attack = elfFunctions.attack // this one is added after introduction of elfFunctions
     Sam.attack()
