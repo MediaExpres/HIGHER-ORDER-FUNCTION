@@ -21,7 +21,7 @@ const elf = {
     // factory functions
     const elfFunctions = {
         attack() {
-            return 'attack with ' + weapon
+            return 'attack with ' + this.weapon // this. added after error: weapon is not defined
         }
     }
     function createElf(name, weapon) {
@@ -36,4 +36,5 @@ const elf = {
     // Peter.attack()
     
     const Sam = createElf('Samuel', 'fire')
+    Sam.attack = elfFunctions.attack // this one is added after introduction of elfFunctions
     Sam.attack()
