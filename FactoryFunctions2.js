@@ -19,14 +19,16 @@ const elf = {
     elf2.attack()
     
     // factory functions
-    
+    const elfFunctions = {
+        attack() {
+            return 'attack with ' + weapon
+        }
+    }
     function createElf(name, weapon) {
         return {
             name, //: name, symplified with ES6
             weapon, //: weapon,
-            attack() {
-                return 'attack with ' + weapon
-            }
+          // removed the function attack from there and created elfFunctions above
         }
     }
     
