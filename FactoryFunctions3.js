@@ -3,6 +3,7 @@
 function Elf(name, weapon) {
     this.name = name;
     this.weapon = weapon;  
+    console.log('this', this);
 }
 
 Elf.prototype.attack = function() { // don't want to use arrow function because throws undefined because it is lexically scoped, while now it is dinamically scoped
