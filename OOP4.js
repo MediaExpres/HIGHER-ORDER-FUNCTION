@@ -5,12 +5,14 @@ class Elf {
         this.name = name;
         this.weapon = weapon;  
     }
-    attack() {
+    attack() { // attack is not inside constructor because will take space in memory at every instantiation of an object, now is just in one place
         return 'attack with ' + this.weapon
     }
 }
 
-// this is syntactc sugar as they say because we still use prototypal inheritance
+// this is syntactic sugar as they say because we still use prototypal inheritance
+// everything in javascript is an object, class keyword is prototypal inheritance
+// = pseudoclass inheritance
 
 const peter = new Elf('Peter', 'stones') 
 console.log(peter instanceof Elf) // = true
