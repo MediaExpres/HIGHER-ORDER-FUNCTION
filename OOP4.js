@@ -10,9 +10,7 @@ class Elf {
     }
 }
 
-// Elf.prototype.attack = function() { 
-    
-// }
+// this is syntactc sugar as they say
 
 const peter = new Elf('Peter', 'stones') 
   console.log(peter.attack())
