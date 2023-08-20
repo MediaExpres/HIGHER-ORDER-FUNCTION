@@ -13,6 +13,7 @@ class Elf {
 // this is syntactc sugar as they say because we still use prototypal inheritance
 
 const peter = new Elf('Peter', 'stones') 
+console.log(peter instanceof Elf) // = true
   console.log(peter.attack())
 const sam = new Elf('Samuel', 'fire')
   console.log(sam.attack())
