@@ -1,5 +1,8 @@
    // Constructor Funcrtions
-   
+   // this is a kind of object oriented programming but not quite, 
+   // Andrei says is confusing but I don't think so anyway
+   // Object.create() was added for object oriented programming
+   // to use pure prototypal inheritance 
 function Elf(name, weapon) {
     this.name = name;
     this.weapon = weapon;  
