@@ -1,4 +1,6 @@
 // debate to use or not to use classes, this. and new Elf like coding
+// because to much confusion
+// everything below could be done with Object.create()
 
 class Elf {
     constructor(name, weapon) {
