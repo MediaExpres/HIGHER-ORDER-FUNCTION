@@ -19,3 +19,13 @@ const person = {
     }
 }
 
+// ecplicite binding
+
+const person3 = {
+    name: 'Karen',
+    age: 44,
+    hi: function() {
+        console.log('hi ' + this.setTimeout) // this explicitly reffers to window
+    }.bind(window)
+}
+person3.hi() // hi function setTimeout() { [native code] }
