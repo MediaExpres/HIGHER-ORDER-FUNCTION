@@ -5,11 +5,14 @@ class Elfa {
         this.name = name;
         this.weapon = weapon;  
     }
+    attack() {
+        return 'attack with ' + this.weapon
+    }
 }
 
-Elf.prototype.attack = function() { 
-    return 'attack with ' + this.weapon
-}
+// Elf.prototype.attack = function() { 
+    
+// }
 
 const peter = new Elf('Peter', 'stones') 
   console.log(peter.attack())
