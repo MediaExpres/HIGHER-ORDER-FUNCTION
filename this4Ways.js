@@ -25,7 +25,9 @@ const person3 = {
     name: 'Karen',
     age: 44,
     hi: function() {
-        console.log('hi ' + this.setTimeout) // this explicitly reffers to window
+        console.log('hi ' + this.setTimeout) 
+        // this explicitly reffers to window
+        // explicit use bind, call or apply
     }.bind(window)
 }
 person3.hi() // hi function setTimeout() { [native code] }
