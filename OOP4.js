@@ -1,6 +1,6 @@
 // with ES6 js got classes
 
-class Elfa {
+class Elf {
     constructor(name, weapon) {
         this.name = name;
         this.weapon = weapon;  
