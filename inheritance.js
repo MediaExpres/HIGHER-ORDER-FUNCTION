@@ -10,4 +10,5 @@ class Elf {
 
 const fiona = new Elf('Fiona', 'ninja stars');
 const ogre ={...fiona}
-ogre // now I copied fiona into ogre. Cloned object but no longer has Elf class, it's an empty object.
+// ogre // now I copied fiona into ogre. Cloned object but no longer has Elf class, it's an empty object.
+console.log(fiona === ogre); // throw false because the objects does not refferencing the same place in memory
