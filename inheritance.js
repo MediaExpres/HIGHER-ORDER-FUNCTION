@@ -26,7 +26,8 @@ class Character { // all the characters will have name, weapon and can attack
 }
 
 class Elf extends Character { // subclassing in OOP
-
+    
 }
 
 const fiona = new Elf('Fiona', 'ninja stars');
+fiona // throws Object { name: "Fiona", weapon: "ninja stars" }
