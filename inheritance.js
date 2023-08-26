@@ -9,3 +9,5 @@ class Elf {
 }
 
 const fiona = new Elf('Fiona', 'ninja stars');
+const ogre ={...fiona}
+ogre // now I copied fiona into ogre
