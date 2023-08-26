@@ -51,6 +51,18 @@ class Elf extends Character { // subclassing in OOP
     }
 }
 
+class Ogre extends Character {
+    constructor(name, weapon, color) {
+        super(name, weapon);
+        this.color = color; 
+    }
+    makeFort() {
+        return 'strongest fort in the world was build';
+    }
+}
+
 const dolby = new Elf('Dolby', 'cloth', 'house');
 // dolby // throws: Object { name: "Dolby", weapon: "cloth", type: "house" }
 dolby.attack(); // throws: "attack with cloth" 
+const sherk = new Ogre('Shrek', 'club', 'green')
+sherk
