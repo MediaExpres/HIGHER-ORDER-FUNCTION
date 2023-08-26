@@ -46,6 +46,7 @@ class Character { // all the characters will have name, weapon and can attack
 class Elf extends Character { // subclassing in OOP
     constructor(name, weapon, type) {
         super(name, weapon);
+        console.log(this) // proves super must be used to allow this. (if console log above super throws an error)
         this.type = type
     }
 }
