@@ -51,4 +51,5 @@ class Elf extends Character { // subclassing in OOP
 }
 
 const dolby = new Elf('Dolby', 'cloth', 'house');
-dolby // throws: Object { name: "Dolby", weapon: "cloth", type: "house" }
+// dolby // throws: Object { name: "Dolby", weapon: "cloth", type: "house" }
+dolby.attack(); // throws: "attack with cloth" 
