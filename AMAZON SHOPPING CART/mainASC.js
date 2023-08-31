@@ -12,6 +12,8 @@
     //     return Object.assign({}, user, {purchaseItem: item})
     // } -----> this is to simple, I want to use compose
 
+    let amazonHistory = [] // added History
+
     const compose = (f, g) => (...args) => f(g(...args)); //adding actually compose the manual way
     purchaseItem(
         emptyCart,
@@ -25,11 +27,13 @@
     }
 
     function addItemToCart(user, item) {
+        amazonHistory.push(user) // catches user adding item to cart
         const updateCart = user.cart.concat(item)
         return Object.assign({}, user, {cart:updateCart})
     }
 
     function applyTaxToItems(user) {
+        amazonHistory.push(user) // user before taxes
         const {cart} = user;
         const taxRate = 1.3;
         const updatedCart = cart.map(item => {
@@ -42,11 +46,13 @@
     }
 
     function buyItemMoveFromCartToPurchases(user) {
+        amazonHistory.push(user) // catches to history the buying
         return Object.assign({}, user, {purchases: user.cart})
     }
 
     function emptyCart(user) {
-        return user
+        amazonHistory.push(user) // catches the empty cart
+        return Object.assign({}, user, {cart: []})
     }
 
     // Implement cart feature:
