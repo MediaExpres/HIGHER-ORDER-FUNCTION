@@ -12,12 +12,13 @@ const user = {
 //     return Object.assign({}, user, {purchaseItem: item})
 // } -----> this is to simple, I want to use compose
 
+const compose = (f, g) => (...args) => f(g(...args)); //adding actually compose the manual way
 purchaseItem(
     emptyCart,
     buyItemMoveFromCartToPurchases,
     applyTaxToItems,
     addItemToCart
-)
+)(user, {name: 'laptop', price: 3500})
 
 function addItemToCart() {}
 
