@@ -20,13 +20,26 @@ purchaseItem(
     addItemToCart
 )(user, {name: 'laptop', price: 3500})
 
-function addItemToCart() {}
+function purchaseItem(...fns) {
+   return fns.reduce(compose)
+}
 
-function applyTaxToItems() {}
+function addItemToCart(user, item) {
+    const updateCart = user.cart.concat([item])
+    return Object.assign({}, user, {cart:updateCart})
+}
 
-function buyItemMoveFromCartToPurchases() {}
+function applyTaxToItems(user) {
+    return user
+}
 
-function emptyCart() {}
+function buyItemMoveFromCartToPurchases(user) {
+    return user
+}
+
+function emptyCart(user) {
+    return user
+}
 
 // Implement cart feature:
 // 1. Add items to cart
