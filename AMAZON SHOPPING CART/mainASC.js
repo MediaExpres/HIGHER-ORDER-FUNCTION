@@ -6,6 +6,8 @@ const user = {
     purchases: [],
 }
 
+purchaseItem({name: 'laptop', price: 350})
+
 function purchaseItem(user, item) {
     return Object.assign({}, user, {purchaseItem: item})
 } 
