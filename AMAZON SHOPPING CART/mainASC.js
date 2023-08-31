@@ -42,7 +42,7 @@
     }
 
     function buyItemMoveFromCartToPurchases(user) {
-        return user
+        return Object.assign({}, user, {purchases: user.cart})
     }
 
     function emptyCart(user) {
