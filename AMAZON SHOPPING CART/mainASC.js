@@ -6,7 +6,9 @@ const user = {
     purchases: [],
 }
 
-function purchaseItem() {} 
+function purchaseItem(user, item) {
+    return Object.assign({}, user, {purchaseItem: item})
+} 
 
 function itemsToCart() {}
 
