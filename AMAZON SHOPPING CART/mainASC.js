@@ -60,3 +60,5 @@
     // 2. Add 3% tax on items in cart
     // 3. Buy item: cart --> purchases
     // 4. Empty cart
+
+    amazonHistory
