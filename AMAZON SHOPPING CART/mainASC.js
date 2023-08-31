@@ -6,13 +6,20 @@ const user = {
     purchases: [],
 }
 
-purchaseItem(user, {name: 'laptop', price: 350})
+// purchaseItem(user, {name: 'laptop', price: 350})
 
-function purchaseItem(user, item) {
-    return Object.assign({}, user, {purchaseItem: item})
-} 
+// function purchaseItem(user, item) {
+//     return Object.assign({}, user, {purchaseItem: item})
+// } -----> this is to simple, I want to use compose
 
-function itemsToCart() {}
+purchaseItem(
+    emptyCart,
+    buyItemMoveFromCartToPurchases,
+    applyTaxToItems,
+    addItemToCart
+)
+
+function addItemToCart() {}
 
 function applyTaxToItems() {}
 
