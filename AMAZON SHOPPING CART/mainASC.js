@@ -6,7 +6,15 @@ const user = {
     purchases: [],
 }
 
-purchaseItem 
+function purchaseItem() {} 
+
+function itemsToCart() {}
+
+function applyTaxToItems() {}
+
+function buyItemMoveFromCartToPurchases() {}
+
+function emptyCart() {}
 
 // Implement cart feature:
 // 1. Add items to cart
