@@ -1,4 +1,4 @@
-// This is the file written during the lecture Solution: Amazon, JavaScript: The Advanced Concepts
+// This is the file written during the lecture Solution: Amazon, JavaScript: The Advanced Concepts within Zero To Mastery Academy
 // Amazon shopping
     const user = {
         name: 'Kim',
