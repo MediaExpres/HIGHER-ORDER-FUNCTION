@@ -1,4 +1,5 @@
-    // Amazon shopping
+// This is the file written during the lecture Solution: Amazon, JavaScript: The Advanced Concepts
+// Amazon shopping
     const user = {
         name: 'Kim',
         active: true,
