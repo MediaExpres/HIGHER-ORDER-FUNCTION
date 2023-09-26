@@ -18,3 +18,5 @@ totalPeaceTime: totalPeaceTime
 
 const ohno = makeNuclearButton();
 ohno.totalPeaceTime(); // returns 0 (zero)
+
+// test
