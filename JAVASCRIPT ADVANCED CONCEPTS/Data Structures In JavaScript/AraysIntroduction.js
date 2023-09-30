@@ -30,3 +30,7 @@
 // delete O(n)
 
 const strings = ['a', 'b', 'c', 'd']; // we just created an array in javascript
+
+// 4*4 = 16 bytes of storage used, the array is now stored in RAM
+
+strings[2] // expected output 'c'
